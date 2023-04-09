@@ -1,0 +1,168 @@
+:root{
+    --colorTextos: #000000;
+    --color-text-select: #8b008b;
+    --color-letra: #00008b;
+}
+
+.color-pantalla-contactos{
+    background-color: ivory;
+}
+
+.container-principal-agradesimiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-texto-agradesimiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px;
+    color: var(--color-letra);
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.801);
+    padding: 40px;
+}
+
+@media screen and (max-width: 997px){
+    .contenedor-texto-agradesimiento{
+        width: 80%;
+    }
+}
+
+.letra-agradecimiento{
+    color: var(--color-text-select);
+}
+
+.contenedor-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-contacto{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800px;
+}
+
+form{
+    background: #fff;
+    width: 80%;
+    margin: 40px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(225, 225, 225, 0.8);
+    color: var(--color-text-select);
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+.grupo{
+    position: relative;
+    margin: 30px;
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 5;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+}
+
+.lab_binary{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+}
+
+.barra{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+input:focus~.barra::before, 
+textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgb(0,3,36);
+    background: linear-gradient(90deg, rgba(0,3,36,1) 0%, rgba(76,9,242,0.9514005431274072) 75%, rgba(0,212,255,1) 100%);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+.btn-contacto{
+    background-color: var(--color-text-select);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.btn-contacto:hover{
+    background-color: var(--color-letra);
+    animation: flash;
+    animation-duration: 1s;
+}
+
+.parrafo-form{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: var(--color-letra);
+    padding-top: 20px;
+}
